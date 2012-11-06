@@ -1,0 +1,21 @@
+<!doctype html>
+<html><head>
+  <meta charset='utf-8'>
+  <title>Odograph</title>
+</head><body>
+
+<div id='odograph'></div>
+
+<script src="js/libs/jquery.js"></script>
+<script src="app/odograph.js"></script>
+<script>
+(function(window) {
+  'use strict';
+
+  var odo = new Odograph(123333);
+  odo.render(function (el) {
+    $('#odograph').html(el);
+  });
+}(window));
+</script>
+</body></html>
